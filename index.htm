@@ -1,0 +1,49 @@
+<head>
+<title>TEST | ifilemymass</title>
+<script src="jquery-1.11.1.js"></script>
+<script src="jquery-ui.js"></script>
+<link href="style.css" rel="stylesheet">
+<script>
+$(function(){
+	$('#sidebar').hide();
+	$('#menu').on('click', function(){
+        $('#sidebar').toggle('slide', { direction: 'left' }, 600);});
+	$('#main-content').on('click', function(){
+        $('#sidebar').hide('slide', { direction: 'left' }, 600);});
+});
+</script>
+</head>
+<body>
+	<!--Navbar start-->
+	<div id="nav">
+		<div class="tab" id="menu"><img id="icon" src="icon.svg">MENU</div>
+		<div class="tab">HOME</div>
+		<div class="tab">ABOUT ME</div>
+		<div class="tab">IFILEMYMASS</div>
+		<div class="tab">CONTACT ME</div>
+	</div>
+	<!--Navbar end-->
+	
+	<!--Sidebar start-->
+	<div id="sidebar"><center>
+		<-Sidebar content here->
+	</center></div>
+	<!--Sidebar end-->
+	
+	<!--Main content start-->
+	<div id="main-content"><center>
+	<div  class="row">
+		<div class="col">DIV#1</div>
+		<div class="col">DIV#2</div>
+	</div>
+	<div  class="row">
+		<div class="col">DIV#3 </div>
+		<div class="col">DIV#4</div>
+	</div>
+	<div  class="row">
+		<div class="col">DIV#5 </div>
+		<div class="col">DIV#6</div>
+	</div>
+	</center></div>
+	<!--Main content end-->
+</body>
